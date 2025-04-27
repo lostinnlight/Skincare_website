@@ -1,0 +1,144 @@
+.contact-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.contact-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contact-info-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.contact-info-text {
+    color: #718096;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    space-y: 1rem;
+}
+
+.contact-details-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    color: #ed64a6;
+}
+
+.contact-link,
+.contact-address {
+    color: #4a5568;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #ed64a6;
+}
+
+.contact-form-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    border: 1px solid #d1d5db;
+    padding: 0.75rem;
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    box-shadow: 0 0 0 2px rgba(237, 100, 166, 0.5);
+    border-color: #ed64a6;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #ed64a6;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit-button:hover {
+    background-color: #d53f8c;
+}
+
+.submit-button:focus {
+    box-shadow: 0 0 0 2px rgba(237, 100, 166, 0.5);
+}

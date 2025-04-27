@@ -1,0 +1,131 @@
+.home-page-container {
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .header {
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ed64a6;
+    text-decoration: none;
+  }
+  
+  .logo-image {
+    height: 2.5rem;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #4a5568;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #ed64a6;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+  }
+  
+  .hero-section {
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1024px;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .hero-text {
+      text-align: left;
+      width: 50%;
+    }
+    .hero-image {
+      width: 50%;
+    }
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    color: #718096;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .shop-now-button {
+    background-color: #ed64a6;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #d53f8c;
+  }
+  
+  .hero-image-src {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer {
+    background-color: white;
+    padding: 1.5rem 0;
+  }
+  
+  .footer .container {
+    text-align: center;
+    color: #718096;
+  }
